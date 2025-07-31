@@ -1,0 +1,336 @@
+{
+    "saltRounds": 10,
+    "requestsConfig": {
+        "GET": "Read",
+        "POST": "Write",
+        "PATCH": "Update",
+        "DELETE": "Delete"
+    },
+    "userStatusPending": [
+        "PENDING_COMMUNITY"
+    ],
+    "otpConfigs": {
+        "passwordReset": {
+            "length": 6,
+            "numberOnly": true,
+            "life": 15,
+            "time": "m"
+        },
+        "verification": {
+            "length": 6,
+            "numberOnly": true,
+            "life": 15,
+            "time": "m"
+        }
+    },
+    "codeGeneratorConfigs": {
+        "community": {
+            "length": 6,
+            "numberOnly": true
+        }
+    },
+    "permissions": {
+        "POST": {
+            "allowMemberToAdd": false,
+            "allowMemberToPost": true,
+            "allowPostTitle": true,
+            "allowCoverImage": true,
+            "hidePostFeature": false,
+            "hideMemberCount": false
+        },
+        "EVENTS": {
+            "allowMemberToAdd": false,
+            "hidePostFeature": false,
+            "allowMemberToCreateEvent": false,
+            "hideMemberCount": false
+        },
+        "CHATS": {
+            "allowMemberToSeeChatHistory": false,
+            "hideMemberCount": false
+        },
+        "COURSE": {
+            "hideMemberCount": false
+        },
+        "IMAGES": {
+            "allowMemberToAdd": false,
+            "allowMemberToPost": true,
+            "hidePostFeature": false,
+            "hideMemberCount": false
+        }
+    },
+    "layout": {
+        "POST": {
+            "SpaceLayout": "Feed",
+            "rightSidebar": false,
+            "memberBlock": false
+        },
+        "EVENTS": {
+            "SpaceLayout": "Thumbnail"
+        },
+        "CHATS": null,
+        "COURSE": null,
+        "IMAGES": {
+            "SpaceLayout": "Feed"
+        }
+    },
+    "validUserStatus": [
+        "PENDING_VERIFICATION",
+        "PENDING_COMMUNITY",
+        "BLOCKED",
+        "COMPLETED_PROFILE"
+    ],
+    "validSpaceType": [
+        "EVENTS",
+        "POST",
+        "CHATS",
+        "COURSE",
+        "IMAGES"
+    ],
+    "validEntityType": [
+        "EVENTS",
+        "POST",
+        "CHATS",
+        "COMMENT",
+        "LIKE",
+        "MEMBERS",
+        "COMMUNITY_MEMBERS",
+        "SPACE_MEMBERS",
+        "COURSE",
+        "IMAGES"
+    ],
+    "validNotificationEntityType": [
+        "EVENTS",
+        "USER",
+        "POST",
+        "CHATS",
+        "COMMENT",
+        "LIKE",
+        "MEMBERS",
+        "COMMUNITY_MEMBERS",
+        "SPACE_MEMBERS",
+        "COURSE",
+        "IMAGES"
+    ],
+    "validNotificationType": [
+        "EMAIL",
+        "NOTIFICATION",
+        "IN_APP"
+    ],
+    "validNotificationStatus": [
+        "PENDING",
+        "SENT",
+        "FAILED"
+    ],
+    "validSpaceCourseType": [
+        "SELF_PACED",
+        "STRUCTURED",
+        "SCHEDULED"
+    ],
+    "validSpaceAccess": [
+        "OPEN",
+        "PRIVATE",
+        "SECRET",
+        "DRAFT"
+    ],
+    "validSpaceChatNotification": [
+        "off",
+        "mentions",
+        "all"
+    ],
+    "validLikeEntityType": [
+        "EVENTS",
+        "POST",
+        "CHATS",
+        "MEMBERS",
+        "COURSE",
+        "IMAGES",
+        "COMMENT"
+    ],
+    "validSpaceEventRepeatType": [
+        "DOESNOT_REPEAT",
+        "DAILY",
+        "EVERY_WEEKDAY",
+        "EVERY_THURSDAY",
+        "BI_WEEKLY_ON_THURSDAY"
+    ],
+    "validSpaceEventLocation": [
+        "IN_PERSON",
+        "URL",
+        "LIVE_STREAM",
+        "LIVE_ROOM",
+        "TBD"
+    ],
+    "validSpaceEventStatus": [
+        "DRAFT",
+        "PENDING",
+        "ONGOING",
+        "POSTPONED",
+        "COMPLETED",
+        "CANCELLED",
+        "PUBLISHED"
+    ],
+    "validCommunityMemberStatus": [
+        "PENDING",
+        "APPROVED",
+        "DECLINED"
+    ],
+    "validSpaceMemberStatus": [
+        "PENDING",
+        "APPROVED",
+        "DECLINED"
+    ],
+    "validLessonsStatus": [
+        "DRAFT",
+        "PUBLISHED"
+    ],
+    "validLessonsType": [
+        "LESSON",
+        "QUIZ"
+    ],
+    "validLessonsDefaultTab": [
+        "Comments",
+        "Curriculum",
+        "Files"
+    ],
+    "validQuizType": [
+        "SINGLE",
+        "MULTIPLE"
+    ],
+    "validSpacesImagePostStatus": [
+        "DRAFT",
+        "PUBLISH",
+        "SCHEDULE"
+    ],
+    "validEventAttendeesStatus": [
+        "going",
+        "not_going",
+        "maybe"
+    ],
+    "validChatMessageType": [
+        "TEXT",
+        "IMAGE/VIDEO",
+        "OTHER"
+    ],
+    "validBillingInterval": [
+        "DAYS",
+        "WEEK",
+        "MONTH",
+        "YEAR",
+        "QUARTER"
+    ],
+    "validSubscriptionType": [
+        "FREE",
+        "PROFESSIONAL",
+        "BUSINESS",
+        "ENTERPRISE",
+        "PLUS"
+    ],
+    "validWorkflowTriggerType": [
+        "MEMBERS",
+        "EVENTS",
+        "ACCESS_GROUPS",
+        "SPACES",
+        "SPACE_GROUPS",
+        "PAYWALLS",
+        "TAGS",
+        "POST_AND_COMMENTS",
+        "COURSES",
+        "FORMS",
+        "MESSAGING"
+    ],
+    "validWorkflowTriggerNames": [
+        "JOINED_COMMUNITY",
+        "PROFILE_FIELD_UPDATED",
+        "CHANGED_EMAIL",
+        "RSVPD_TO_EVENT",
+        "RSVPD_TO_RECURRING_EVENT",
+        "EVENT_ADDED_FOR_MEMBER",
+        "EVENT_STARTS_IN_AN_HOUR",
+        "PUBLISHED_AN_EVENT",
+        "ATTENDED_LIVE_EVENT",
+        "ADDED_TO_ACCESS_GROUP",
+        "REMOVED_FROM_ACCESS_GROUP",
+        "JOINED_SPACE",
+        "REMOVED_FROM_SPACE",
+        "JOINED_SPACE_GROUP",
+        "REMOVED_FROM_SPACE_GROUP",
+        "CHARGED_FOR_A_PAYWALL",
+        "SUBSCRIBED_TO_PAYWALL",
+        "UNSUBSCRIBED_FROM_PAYWALL",
+        "STARTED_PAYWALL_TRIAL",
+        "ENDED_TRIAL_WITHOUT_SUBSCRIPTION",
+        "TAG_ADDED",
+        "TAG_REMOVED",
+        "PUBLISHED_POST",
+        "POSTED_COMMENT",
+        "LIKED_POST",
+        "COMPLETED_COURSE",
+        "COMPLETED_LESSON",
+        "COMPLETED_SECTION",
+        "PASSED_QUIZ",
+        "FAILED_QUIZ",
+        "SUBMITS_QUIZ",
+        "FORM_SUBMITTED",
+        "ADMIN_RECIEVED_DIRECT_MESSAGE"
+    ],
+    "validWorkflowActionType": [
+        "COMMUNICATION",
+        "TAGS",
+        "MEMBERS",
+        "SPACE_AND_SPACE_GROUPS",
+        "ACCESS_GROUPS",
+        "WEBHOOK",
+        "PAYWALLS",
+        "EVENTS",
+        "FLOW",
+        "GAMIFICATION"
+    ],
+    "validWorkflowActionName": [
+        "SEND_AN_EMAIL",
+        "SEND_DIRECT_MESSAGE",
+        "SEND_MOBILE_PUSH_NOTIFICATION",
+        "UNSUBSCRIBE_FROM_EMAIL_MARKETING",
+        "ADD_TAG",
+        "REMOVE_TAG",
+        "REMOVE_MEMBERS_FROM_COMMUNITY",
+        "ENABLE_DIRECT_MESSAGING",
+        "DISABLE_DIRECT_MESSAGING",
+        "ADD_MEMBERS_TO_SPACE",
+        "REMOVE_MEMBERS_FROM_SPACE",
+        "ADD_MEMBERS_TO_SPACE_GROUP",
+        "REMOVE_MEMBERS_FROM_SPACE_GROUP",
+        "ADD_MEMBERS_TO_ACCESS_GROUP",
+        "REMOVE_MEMBERS_FROM_ACCESS_GROUP",
+        "SEND_TO_WEBHOOK",
+        "CANCEL_PAYWALL_SUBSCRIPTION",
+        "SUBSCRIBE_TO_PAYWALL_TRIAL",
+        "RSVP_MEMBERS_TO_EVENT",
+        "TIME_DELAY",
+        "REWARD_POINTS"
+    ],
+    "validWorkflowType": [
+        "AUTOMATION",
+        "BULK_ACTION",
+        "SCHEDULED"
+    ],
+    "validCourseStatus": [
+        "COMPLETED",
+        "IN_PROGRESS",
+        "PENDING"
+    ],
+    "validPostLayout": [
+        "Feed",
+        "List",
+        "Card"
+    ],
+    "validEventLayout": [
+        "Thumbnail",
+        "List",
+        "Calendar"
+    ],
+    "validImageLayout": [
+        "Feed",
+        "Masonry",
+        "Grid"
+    ]
+}
