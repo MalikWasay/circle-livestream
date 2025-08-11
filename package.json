@@ -12,7 +12,8 @@
     "migrate:prod": "cross-env NODE_ENV=prod.circle.api dotenv -e .env.prod.circle.api -- sequelize db:migrate --env development",
     "migrate:undo:dev": "cross-env NODE_ENV=dev.circle.api dotenv -e .env.dev.circle.api -- sequelize db:migrate:undo --env development",
     "migrate:undo:all:dev": "cross-env NODE_ENV=dev.circle.api dotenv -e .env.dev.circle.api -- sequelize db:migrate:undo:all --env development",
-    "migrate:undo:all:prod": "cross-env NODE_ENV=prod.circle.api dotenv -e .env.prod.circle.api -- sequelize db:migrate:undo:all --env development"
+    "migrate:undo:all:prod": "cross-env NODE_ENV=prod.circle.api dotenv -e .env.prod.circle.api -- sequelize db:migrate:undo:all --env development",
+    "test:livestream": "node test-livestream.js"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +39,7 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
+    "axios": "^1.6.0",
     "dotenv-cli": "^9.0.0",
     "nodemon": "^3.1.10",
     "sequelize-cli": "^6.6.3"

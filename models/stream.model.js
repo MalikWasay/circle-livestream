@@ -37,6 +37,11 @@ module.exports = (sequelize) => {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
       },
+      status: {
+        type: DataTypes.ENUM("pending", "live", "ended"),
+        defaultValue: "pending",
+        allowNull: false,
+      },
       user_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
